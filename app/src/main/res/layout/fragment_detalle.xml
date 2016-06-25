@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".fragments.DetalleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNombre"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/dmnNombre"
+        android:drawableLeft="@drawable/ic_contact"
+        android:textStyle="bold"
+        android:text="@string/lblNombre" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/icoTamanio"
+            android:layout_height="@dimen/icoTamanio"
+            android:id="@+id/iconoTwiter"
+            android:src="@drawable/ic_twiter"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dmnLabels"
+            android:gravity="center_vertical"
+            android:id="@+id/lblTwiter"
+            android:text="@string/lblTwiter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/icoTamanio"
+            android:layout_height="@dimen/icoTamanio"
+            android:id="@+id/iconoTelefono"
+            android:src="@drawable/ic_phone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dmnLabels"
+            android:gravity="center_vertical"
+            android:id="@+id/lblTelefono"
+            android:text="@string/lblTelefono" />
+    </LinearLayout>
+</LinearLayout>
